@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/QR-StarCode-06b6d4?style=for-the-badge&logo=qrcode&logoColor=white" alt="bbt-QrCode" />
+  <img src="https://img.shields.io/badge/bbt--QrCode-06b6d4?style=for-the-badge&logo=qrcode&logoColor=white" alt="bbt-QrCode" />
   <br/>
   <strong>The free, open-source QR code generator that doesn't suck.</strong>
   <br/>
