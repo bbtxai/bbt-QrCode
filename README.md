@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://qrcode.aixmb.cn">
+  <a href="https://2wm.bbtai.us">
     <img src="https://img.shields.io/badge/🔗_Live_Demo-06b6d4?style=for-the-badge" alt="Live Demo" />
   </a>
   &nbsp;
@@ -93,7 +93,7 @@ Most QR generators are bloated SaaS tools that paywall basic features, plaster w
 ## Quick Start
 
 ### Option 1: Just use it
-Visit **[qrcode.aixmb.cn](https://qrcode.aixmb.cn)** — that's it.
+Visit **[qrcode.aixmb.cn](https://2wm.bbtai.us)** — that's it.
 
 ### Option 2: Self-host
 ```bash
