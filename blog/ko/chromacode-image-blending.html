@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유 | QR StarCode</title>
+<meta name="description" content="ChromaCode로 QR 코드 가운데에 사진과 로고를 넣어도 스캔되는 이유를 오류 정정 원리로 설명하고, 이미지 선택과 대비 조정 요령을 알려드립니다. 브랜드 코드 제작 팁도 담았습니다.">
+<meta name="keywords" content="이미지QR코드,QR코드이미지합성,ChromaCode,QR코드로고넣기,QR코드사진,QR코드디자인,오류정정레벨,QR코드가운데이미지,브랜드QR코드,QR코드커스터마이징,QR코드예술,QR코드색상대비,QR코드가독성,이미지블렌딩,QR코드아트">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://qrcode.aixmb.cn/blog/ko/chromacode-image-blending.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qrcode.aixmb.cn/blog/zh/chromacode-image-blending.html">
+<link rel="alternate" hreflang="ru" href="https://qrcode.aixmb.cn/blog/ru/chromacode-image-blending.html">
+<link rel="alternate" hreflang="ja" href="https://qrcode.aixmb.cn/blog/ja/chromacode-image-blending.html">
+<link rel="alternate" hreflang="ko" href="https://qrcode.aixmb.cn/blog/ko/chromacode-image-blending.html">
+<link rel="alternate" hreflang="en" href="https://qrcode.aixmb.cn/blog/en/chromacode-image-blending.html">
+<link rel="alternate" hreflang="x-default" href="https://qrcode.aixmb.cn/blog/zh/chromacode-image-blending.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QR StarCode">
+<meta property="og:title" content="ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유 | QR StarCode">
+<meta property="og:description" content="ChromaCode로 QR 코드 가운데에 사진과 로고를 넣어도 스캔되는 이유를 오류 정정 원리로 설명하고, 이미지 선택과 대비 조정 요령을 알려드립니다. 브랜드 코드 제작 팁도 담았습니다.">
+<meta property="og:url" content="https://qrcode.aixmb.cn/blog/ko/chromacode-image-blending.html">
+<meta property="article:published_time" content="2026-10-15">
+<meta property="article:modified_time" content="2026-10-15">
+<meta property="article:section" content="QR Code Guides">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유 | QR StarCode">
+<meta name="twitter:description" content="ChromaCode로 QR 코드 가운데에 사진과 로고를 넣어도 스캔되는 이유를 오류 정정 원리로 설명하고, 이미지 선택과 대비 조정 요령을 알려드립니다. 브랜드 코드 제작 팁도 담았습니다.">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:image" content="https://qrcode.aixmb.cn/og-image.png">
+<meta name="twitter:image" content="https://qrcode.aixmb.cn/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유","description":"ChromaCode로 QR 코드 가운데에 사진과 로고를 넣어도 스캔되는 이유를 오류 정정 원리로 설명하고, 이미지 선택과 대비 조정 요령을 알려드립니다. 브랜드 코드 제작 팁도 담았습니다.","inLanguage":"ko","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"publisher":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://qrcode.aixmb.cn/blog/ko/chromacode-image-blending.html"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--card:#141a26;--border:#232c3d;--text:#e6e9f0;--muted:#9aa4b8;--accent:#8b5cf6;--accent2:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Hiragino Sans GB','Noto Sans JP','Malgun Gothic',sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:#a78bfa;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:30px}
+.top .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+.top .brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+h1{font-size:1.9rem;line-height:1.3;margin-bottom:10px}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:26px}
+article h2{font-size:1.35rem;margin:34px 0 12px;padding-left:12px;border-left:3px solid var(--accent)}
+article p{margin-bottom:14px}
+article ul{margin:0 0 14px 22px}
+article li{margin-bottom:6px}
+article strong{color:#fff}
+.cta{margin:40px 0;padding:22px 24px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.08));text-align:center}
+.cta h2{font-size:1.2rem;margin-bottom:6px}
+.cta p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.rel h2{font-size:1.15rem;margin:34px 0 12px}
+.rel a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);margin-bottom:10px;color:var(--text)}
+.rel a:hover{border-color:var(--accent);text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}
+.cards{display:grid;gap:16px;margin-top:26px}
+.card{display:block;padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.card h2{font-size:1.15rem;margin-bottom:6px;color:var(--text)}
+.card p{color:var(--muted);font-size:.92rem}
+.card .d{font-size:.78rem;color:var(--muted);margin-top:8px}
+.intro{color:var(--muted);max-width:60ch}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:30px}
+@media(max-width:560px){h1{font-size:1.5rem}}
+</style>
+<script src="../../ads-analytics.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="../../ko.html">QR <span>StarCode</span></a>
+<nav><a href="../../ko.html">← 홈</a><a href="../../blog/en/chromacode-image-blending.html">English</a><a href="../../blog/zh/chromacode-image-blending.html">中文</a><a href="../../blog/ru/chromacode-image-blending.html">Русский</a><a href="../../blog/ja/chromacode-image-blending.html">日本語</a><span class="cv" style="color:var(--muted);cursor:default">한국어</span></nav>
+</header>
+<nav class="crumb" aria-label="breadcrumb"><a href="../../ko.html">홈</a> › <a href="index.html">블로그 아티클</a> › ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유</nav>
+<h1>ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유</h1>
+<p class="meta">2026-10-15 · 약 3분 소요</p>
+<article>
+<p>브랜드 로고나 사진을 가운데에 넣은 QR 코드를 보면 "이렇게 가려도 정말 읽히나?" 싶을 때가 있습니다. 결론부터 말하면, 조건만 맞으면 충분히 잘 읽힙니다. QR 코드에는 <strong>오류 정정</strong> 기능이 있어 일부가 가려져도 원래 데이터를 복원할 수 있기 때문입니다. 이 글에서는 왜 가운데에 이미지를 넣어도 스캔되는지, <strong>ChromaCode</strong>로 이미지를 합성할 때 무엇을 주의해야 하는지 차근차근 설명합니다.</p>
+<h2>일부가 가려도 읽히는 원리</h2>
+<p>QR 코드는 데이터를 그대로 저장하지 않고, 리드-솔로몬 방식으로 <strong>중복 정보를 함께 기록</strong>합니다. 그래서 코드의 일정 부분이 손상되거나 가려져도 나머지 정보로 원래 내용을 되살립니다. 이 복원 능력은 오류 정정 수준에 따라 달라지며, 보통 L은 약 7%, M은 약 15%, Q는 약 25%, H는 약 30%까지 복원합니다. 가운데 이미지를 넣을 때는 <strong>H 수준</strong>을 선택하는 것이 가장 안전합니다.</p>
+<h2>ChromaCode로 이미지 합성하는 방법</h2>
+<ul>
+<li><strong>코드 생성</strong>: 먼저 링크나 텍스트로 QR 코드를 만듭니다.</li>
+<li><strong>이미지 업로드</strong>: 코드 가운데에 넣을 사진이나 로고를 올립니다.</li>
+<li><strong>크기 조절</strong>: 이미지가 코드 전체 면적의 20%를 넘지 않도록 조정합니다. 너무 크면 복원 한계를 넘어섭니다.</li>
+<li><strong>대비 점검</strong>: 이미지가 밝으면 코드 모듈이 묻혀 버리므로 대비를 조절합니다.</li>
+<li><strong>저장</strong>: PNG나 SVG로 내려받고, 실제 크기로 인쇄해 스캔을 확인합니다.</li>
+</ul>
+<h2>어떤 이미지를 골라야 할까</h2>
+<p>이미지는 <strong>단순하고 대비가 뚜렷한 것</strong>이 좋습니다. 복잡한 사진이나 밝은 하늘, 흰 배경 위의 흰 글자는 코드와 구분되지 않아 인식률을 떨어뜨립니다. 로고라면 배경이 투명하거나 단색인 것을, 사진이라면 피사체가 중앙에 크게 잡힌 것을 고르세요. 얼굴 사진처럼 세부 묘사가 중요한 이미지는 축소되면서 뭉개질 수 있다는 점도 염두에 두세요.</p>
+<h2>대비와 색상에서 주의할 점</h2>
+<ul>
+<li><strong>명암 차이 확보</strong>: 이미지와 코드 모듈 사이에 충분한 명암 차이를 두어야 합니다.</li>
+<li><strong>색 반전 주의</strong>: 밝은 코드를 어두운 배경에 넣는 반전 조합은 일부 스캐너가 읽지 못합니다.</li>
+<li><strong>테두리 여백</strong>: 이미지를 넣더라도 코드 외곽의 여백은 그대로 유지해야 합니다.</li>
+<li><strong>표시 위치</strong>: 파인더 패턴(세 모서리의 큰 사각형)은 절대 가리지 마세요. 이미지는 가운데에만 둡니다.</li>
+</ul>
+<h2>인쇄로 넘어가기 전 확인</h2>
+<p>화면에서 잘 보이는 코드도 인쇄하면 결과가 달라집니다. 이미지가 들어간 코드는 특히 <strong>작은 크기에서 약해지므로</strong>, 최소 3cm 이상으로 뽑고 여러 기기로 읽어 보세요. 무광 용지에 인쇄하면 반사가 줄어 인식률이 올라갑니다. 세부 점검 항목은 <a href="qr-code-testing-checklist.html">테스트 체크리스트</a>를 참고하세요. <a href="../../ko.html">QR StarCode</a>의 ChromaCode 기능을 쓰면 로고를 넣은 브랜드 코드를 가입 없이 바로 만들 수 있습니다.</p>
+</article>
+<div class="cta">
+<h2>지금 바로 나만의 QR 코드를 만들어 보세요</h2>
+<p>가입도 설치도 추적도 없습니다. 11가지 데이터 유형과 로고 삽입, 고화질 SVG·PNG 다운로드까지 브라우저에서 바로 완성하세요.</p>
+<a class="btn" href="../../ko.html">QR StarCode 열기</a>
+</div>
+<section class="rel">
+<h2>관련 글</h2>
+<a href="qr-code-testing-checklist.html">QR 코드 배포 전 테스트 체크리스트: 인쇄 전 필수 점검</a>
+<a href="qr-code-generator-guide.html">무료 QR 코드 생성기 사용법: 만들기부터 PNG·SVG 저장까지</a>
+<a href="qr-code-vs-barcode.html">QR 코드와 바코드 차이: 일차원과 이차원, 무엇을 써야 할까</a>
+</section>
+<footer class="foot">
+<a href="../../ko.html">← 홈으로</a>
+<a href="index.html">블로그 아티클로 →</a>
+</footer>
+</div>
+</body>
+</html>

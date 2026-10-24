@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較 | QR StarCode</title>
+<meta name="description" content="QRコードとバーコード（一次元コード）の違いを、情報量・誤り訂正・読み取り方向・用途の面から比較します。それぞれの得意分野と、目的に応じた使い分けの判断基準がよく分かります。用途に応じた選び方のヒントも紹介します。">
+<meta name="keywords" content="QRコード バーコード 違い,バーコード とは,一次元コード,二次元コード,QRコード 容量,バーコード 容量,QRコード 誤り訂正,バーコード 種類,EANコード,JANコード,Code128,QRコード 読み取り,バーコード 読み取り,QRコード 比較,バーコード 比較">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://qrcode.aixmb.cn/blog/ja/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qrcode.aixmb.cn/blog/zh/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ru" href="https://qrcode.aixmb.cn/blog/ru/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ja" href="https://qrcode.aixmb.cn/blog/ja/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ko" href="https://qrcode.aixmb.cn/blog/ko/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="en" href="https://qrcode.aixmb.cn/blog/en/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="x-default" href="https://qrcode.aixmb.cn/blog/zh/qr-code-vs-barcode.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QR StarCode">
+<meta property="og:title" content="QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較 | QR StarCode">
+<meta property="og:description" content="QRコードとバーコード（一次元コード）の違いを、情報量・誤り訂正・読み取り方向・用途の面から比較します。それぞれの得意分野と、目的に応じた使い分けの判断基準がよく分かります。用途に応じた選び方のヒントも紹介します。">
+<meta property="og:url" content="https://qrcode.aixmb.cn/blog/ja/qr-code-vs-barcode.html">
+<meta property="article:published_time" content="2026-10-15">
+<meta property="article:modified_time" content="2026-10-15">
+<meta property="article:section" content="QR Code Guides">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較 | QR StarCode">
+<meta name="twitter:description" content="QRコードとバーコード（一次元コード）の違いを、情報量・誤り訂正・読み取り方向・用途の面から比較します。それぞれの得意分野と、目的に応じた使い分けの判断基準がよく分かります。用途に応じた選び方のヒントも紹介します。">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:image" content="https://qrcode.aixmb.cn/og-image.png">
+<meta name="twitter:image" content="https://qrcode.aixmb.cn/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較","description":"QRコードとバーコード（一次元コード）の違いを、情報量・誤り訂正・読み取り方向・用途の面から比較します。それぞれの得意分野と、目的に応じた使い分けの判断基準がよく分かります。用途に応じた選び方のヒントも紹介します。","inLanguage":"ja","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"publisher":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://qrcode.aixmb.cn/blog/ja/qr-code-vs-barcode.html"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--card:#141a26;--border:#232c3d;--text:#e6e9f0;--muted:#9aa4b8;--accent:#8b5cf6;--accent2:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Hiragino Sans GB','Noto Sans JP','Malgun Gothic',sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:#a78bfa;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:30px}
+.top .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+.top .brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+h1{font-size:1.9rem;line-height:1.3;margin-bottom:10px}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:26px}
+article h2{font-size:1.35rem;margin:34px 0 12px;padding-left:12px;border-left:3px solid var(--accent)}
+article p{margin-bottom:14px}
+article ul{margin:0 0 14px 22px}
+article li{margin-bottom:6px}
+article strong{color:#fff}
+.cta{margin:40px 0;padding:22px 24px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.08));text-align:center}
+.cta h2{font-size:1.2rem;margin-bottom:6px}
+.cta p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.rel h2{font-size:1.15rem;margin:34px 0 12px}
+.rel a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);margin-bottom:10px;color:var(--text)}
+.rel a:hover{border-color:var(--accent);text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}
+.cards{display:grid;gap:16px;margin-top:26px}
+.card{display:block;padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.card h2{font-size:1.15rem;margin-bottom:6px;color:var(--text)}
+.card p{color:var(--muted);font-size:.92rem}
+.card .d{font-size:.78rem;color:var(--muted);margin-top:8px}
+.intro{color:var(--muted);max-width:60ch}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:30px}
+@media(max-width:560px){h1{font-size:1.5rem}}
+</style>
+<script src="../../ads-analytics.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="../../ja.html">QR <span>StarCode</span></a>
+<nav><a href="../../ja.html">← ホーム</a><a href="../../blog/en/qr-code-vs-barcode.html">English</a><a href="../../blog/zh/qr-code-vs-barcode.html">中文</a><a href="../../blog/ru/qr-code-vs-barcode.html">Русский</a><span class="cv" style="color:var(--muted);cursor:default">日本語</span><a href="../../blog/ko/qr-code-vs-barcode.html">한국어</a></nav>
+</header>
+<nav class="crumb" aria-label="breadcrumb"><a href="../../ja.html">ホーム</a> › <a href="index.html">ブログ記事</a> › QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較</nav>
+<h1>QRコードとバーコードの違い｜容量・誤り訂正・読み取り方を比較</h1>
+<p class="meta">2026-10-15 · 約4分で読めます</p>
+<article>
+<p>店の商品に付いている縞模様の<strong>バーコード</strong>と、四角い<strong>QRコード</strong>。どちらも情報を読み取るためのコードですが、実は仕組みも得意分野も大きく異なります。用途に合わないほうを選んでしまうと、かえって手間が増えることもあります。この記事では、両者の違いを情報量・誤り訂正・読み取り方の面から比較し、使い分けの判断基準を整理します。</p>
+<h2>一次元コードと二次元コードの違い</h2>
+<p>バーコードは横方向にだけ情報を持つ<strong>一次元コード</strong>です。縞の幅と間隔で数字を表すため、扱えるデータは商品番号など限られた桁数に収まります。代表的な規格にEANコードやJANコード、物流向けのCode128などがあります。一方のQRコードは、縦と横の両方向に情報を持つ<strong>二次元コード</strong>です。面全体にデータを詰め込めるため、桁数は比較にならないほど多くなります。</p>
+<h2>情報量と誤り訂正の比較</h2>
+<p>もっとも大きな違いが、記録できる情報量と、汚れへの強さです。</p>
+<ul><li><strong>容量</strong>：バーコードは数字中心で十数桁程度、QRコードは数百文字のテキストや長いURLも格納できる</li>
+<li><strong>誤り訂正</strong>：バーコードは一部がかすれると読めなくなるが、QRコードは欠けた部分を補って復元できる</li>
+<li><strong>文字種</strong>：バーコードは数字と一部記号が中心、QRコードは漢字や日本語もそのまま扱える</li></ul>
+<p>この誤り訂正の強さのおかげで、QRコードはロゴを重ねたり、多少汚れたりしても読み取れます。</p>
+<h2>読み取り方の違い</h2>
+<p>読み取る際の姿勢にも違いがあります。バーコードは縞に対して<strong>垂直</strong>にスキャンする必要があり、読み取り線を横切らせる形になります。レジのスキャナーが高速に読み取れるのは、この仕組みを前提にしているためです。QRコードは三つの隅にある位置検出パターンによって向きを判断するので、<strong>どの角度からでも</strong>自然にカメラを向けるだけで読めます。スマートフォンとの相性が良いのはこの点です。</p>
+<h2>使い分けの判断基準</h2>
+<p>結論として、用途によって向き不向きがはっきりしています。</p>
+<ul><li>商品管理やレジ会計など、決まった短い番号を高速で読むならバーコード</li>
+<li>ウェブサイトへの誘導、クーポン、名刺、決済など、利用者に情報を届けるならQRコード</li>
+<li>両方を一枚に併記して、業務用と顧客用で使い分ける方法も有効</li></ul>
+<p>「誰が、何のために読むのか」を基準に選べば迷いません。QRコードにどんな情報を入れられるかは<a href="qr-code-content-types.html">保存できる情報の一覧</a>で、読み取りの手順は<a href="how-to-scan-a-qr-code.html">QRコードの読み取り方</a>で解説しています。</p>
+</article>
+<div class="cta">
+<h2>無料でQRコードを作成</h2>
+<p>登録不要・透かしなし。11種類のQRコードを今すぐブラウザで作成できます。</p>
+<a class="btn" href="../../ja.html">QR StarCode を開く</a>
+</div>
+<section class="rel">
+<h2>関連記事</h2>
+<a href="qr-code-content-types.html">QRコードに保存できる情報｜テキスト・URL・WiFi・名刺など種類一覧</a>
+<a href="how-to-scan-a-qr-code.html">QRコードの読み取り方｜iPhone・Android・アプリ別の手順と読めない時の対処</a>
+<a href="qr-code-generator-guide.html">無料QRコード生成ツールの使い方｜作成手順とPNG・SVG保存のコツ</a>
+</section>
+<footer class="foot">
+<a href="../../ja.html">← ホームに戻る</a>
+<a href="index.html">ブログ記事に戻る →</a>
+</footer>
+</div>
+</body>
+</html>

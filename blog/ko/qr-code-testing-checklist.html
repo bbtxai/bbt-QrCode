@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR 코드 배포 전 테스트 체크리스트: 인쇄 전 점검 | QR StarCode</title>
+<meta name="description" content="여러 기기와 앱, 다양한 거리·각도·조명에서 QR 코드가 인식되는지 확인하는 배포 전 테스트 체크리스트와 인쇄 검수 항목을 정리했습니다. 실제 인쇄물 검수 요령도 함께 확인해 보세요.">
+<meta name="keywords" content="QR코드테스트,QR코드점검,QR코드오류,QR코드인쇄테스트,QR코드검수,스캔테스트,QR코드배포,QR코드검증,QR코드해상도,QR코드여백,콰이어트존,QR코드크기,QR코드품질,QR코드체크리스트,QR코드안될때">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://qrcode.aixmb.cn/blog/ko/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qrcode.aixmb.cn/blog/zh/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ru" href="https://qrcode.aixmb.cn/blog/ru/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ja" href="https://qrcode.aixmb.cn/blog/ja/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ko" href="https://qrcode.aixmb.cn/blog/ko/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="en" href="https://qrcode.aixmb.cn/blog/en/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="x-default" href="https://qrcode.aixmb.cn/blog/zh/qr-code-testing-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QR StarCode">
+<meta property="og:title" content="QR 코드 배포 전 테스트 체크리스트: 인쇄 전 점검 | QR StarCode">
+<meta property="og:description" content="여러 기기와 앱, 다양한 거리·각도·조명에서 QR 코드가 인식되는지 확인하는 배포 전 테스트 체크리스트와 인쇄 검수 항목을 정리했습니다. 실제 인쇄물 검수 요령도 함께 확인해 보세요.">
+<meta property="og:url" content="https://qrcode.aixmb.cn/blog/ko/qr-code-testing-checklist.html">
+<meta property="article:published_time" content="2026-10-15">
+<meta property="article:modified_time" content="2026-10-15">
+<meta property="article:section" content="QR Code Guides">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QR 코드 배포 전 테스트 체크리스트: 인쇄 전 점검 | QR StarCode">
+<meta name="twitter:description" content="여러 기기와 앱, 다양한 거리·각도·조명에서 QR 코드가 인식되는지 확인하는 배포 전 테스트 체크리스트와 인쇄 검수 항목을 정리했습니다. 실제 인쇄물 검수 요령도 함께 확인해 보세요.">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:image" content="https://qrcode.aixmb.cn/og-image.png">
+<meta name="twitter:image" content="https://qrcode.aixmb.cn/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"QR 코드 배포 전 테스트 체크리스트: 인쇄 전 점검","description":"여러 기기와 앱, 다양한 거리·각도·조명에서 QR 코드가 인식되는지 확인하는 배포 전 테스트 체크리스트와 인쇄 검수 항목을 정리했습니다. 실제 인쇄물 검수 요령도 함께 확인해 보세요.","inLanguage":"ko","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"publisher":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://qrcode.aixmb.cn/blog/ko/qr-code-testing-checklist.html"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--card:#141a26;--border:#232c3d;--text:#e6e9f0;--muted:#9aa4b8;--accent:#8b5cf6;--accent2:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Hiragino Sans GB','Noto Sans JP','Malgun Gothic',sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:#a78bfa;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:30px}
+.top .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+.top .brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+h1{font-size:1.9rem;line-height:1.3;margin-bottom:10px}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:26px}
+article h2{font-size:1.35rem;margin:34px 0 12px;padding-left:12px;border-left:3px solid var(--accent)}
+article p{margin-bottom:14px}
+article ul{margin:0 0 14px 22px}
+article li{margin-bottom:6px}
+article strong{color:#fff}
+.cta{margin:40px 0;padding:22px 24px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.08));text-align:center}
+.cta h2{font-size:1.2rem;margin-bottom:6px}
+.cta p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.rel h2{font-size:1.15rem;margin:34px 0 12px}
+.rel a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);margin-bottom:10px;color:var(--text)}
+.rel a:hover{border-color:var(--accent);text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}
+.cards{display:grid;gap:16px;margin-top:26px}
+.card{display:block;padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.card h2{font-size:1.15rem;margin-bottom:6px;color:var(--text)}
+.card p{color:var(--muted);font-size:.92rem}
+.card .d{font-size:.78rem;color:var(--muted);margin-top:8px}
+.intro{color:var(--muted);max-width:60ch}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:30px}
+@media(max-width:560px){h1{font-size:1.5rem}}
+</style>
+<script src="../../ads-analytics.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="../../ko.html">QR <span>StarCode</span></a>
+<nav><a href="../../ko.html">← 홈</a><a href="../../blog/en/qr-code-testing-checklist.html">English</a><a href="../../blog/zh/qr-code-testing-checklist.html">中文</a><a href="../../blog/ru/qr-code-testing-checklist.html">Русский</a><a href="../../blog/ja/qr-code-testing-checklist.html">日本語</a><span class="cv" style="color:var(--muted);cursor:default">한국어</span></nav>
+</header>
+<nav class="crumb" aria-label="breadcrumb"><a href="../../ko.html">홈</a> › <a href="index.html">블로그 아티클</a> › QR 코드 배포 전 테스트 체크리스트</nav>
+<h1>QR 코드 배포 전 테스트 체크리스트: 인쇄 전 점검</h1>
+<p class="meta">2026-10-15 · 약 3분 소요</p>
+<article>
+<p>QR 코드는 화면에서 잘 보인다고 끝이 아닙니다. 실제로 인쇄하고, 손님이 다른 기기로, 다른 조명 아래에서 스캔하는 순간에 문제가 드러나는 경우가 많습니다. 한 번 인쇄해 배포하면 수정이 어렵기 때문에, 내보내기 전에 꼼꼼히 점검하는 절차가 꼭 필요합니다. 이 글에서는 QR 코드를 배포하기 전 반드시 확인해야 할 항목을 체크리스트 형태로 정리했습니다.</p>
+<h2>1. 원본 파일과 해상도 점검</h2>
+<ul>
+<li><strong>형식</strong>: 인쇄용은 SVG나 1000px 이상 PNG를 사용합니다. 너무 작은 PNG는 확대할 때 계단 현상이 생겨 인식률이 떨어집니다.</li>
+<li><strong>여백</strong>: 코드 둘레에 최소 네 칸 이상의 빈 공간(콰이어트 존)이 있어야 스캐너가 경계를 찾습니다.</li>
+<li><strong>대비</strong>: 어두운 모듈과 밝은 배경의 명암 차이가 충분한지 확인합니다.</li>
+<li><strong>가림 여부</strong>: 세 모서리의 파인더 패턴이 로고나 이미지로 가려지지 않았는지 봅니다.</li>
+</ul>
+<h2>2. 여러 기기와 앱에서 읽어 보기</h2>
+<p>한 대의 휴대폰에서만 확인하고 배포하는 것이 가장 흔한 실수입니다. <strong>아이폰과 안드로이드를 각각 한 대 이상</strong> 준비하고, 기본 카메라뿐 아니라 위챗이나 네이버처럼 스캔 기능이 있는 앱으로도 읽어 보세요. 앱마다 인식 알고리즘이 달라서 특정 앱에서만 실패하는 경우가 꽤 있습니다. 특히 구형 기기와 저가형 카메라는 초점이 느려 인식이 안 되는 일이 잦으므로, 가능하면 오래된 기기도 하나 포함해 테스트하세요.</p>
+<h2>3. 거리·각도·조명 바꿔 보기</h2>
+<ul>
+<li><strong>거리</strong>: 10cm에서 1m까지 여러 거리에서 시도해 보세요.</li>
+<li><strong>각도</strong>: 정면만 아니라 위·아래·좌우로 기울여도 읽히는지 확인합니다.</li>
+<li><strong>조명</strong>: 형광등 아래, 어두운 실내, 야외 직사광선까지 테스트합니다.</li>
+<li><strong>반사</strong>: 유광 인쇄물이나 화면 너머의 코드는 빛 반사에 취약하니 무광 재질도 함께 검토합니다.</li>
+</ul>
+<h2>4. 인쇄 결과물 직접 검수하기</h2>
+<p>모니터에서 통과했다고 인쇄에서도 통과하는 것은 아닙니다. 실제 크기로 샘플을 뽑아 <strong>코드가 뭉개지거나 흐려지지 않았는지</strong>, 여백이 잘려 나가지 않았는지 확인하세요. 잉크가 번지거나 접힘 자국이 생기면 인식이 실패합니다. 카운터에 오래 붙일 코드는 라미네이팅해 오염과 마모도 함께 막는 것이 좋습니다.</p>
+<h2>5. 링크와 대체 경로 준비</h2>
+<p>스캔은 되는데 링크가 죽었다면 의미가 없습니다. 목적지 주소가 실제로 열리는지, 오타가 없는지 반드시 눌러 확인하고, 서버가 잠시 내려갈 때를 대비해 <strong>예비 짧은 주소</strong>를 준비해 두세요. 화면용 코드라면 가까운 거리에서, 대형 인쇄물이라면 먼 거리에서 다시 한 번 <a href="how-to-scan-a-qr-code.html">스캔 방법</a>을 참고해 점검하면 좋습니다.</p>
+<h2>배포 직전 마지막 확인</h2>
+<p>위 항목을 모두 통과했다면, 체크한 내용을 사진으로 남겨 두는 습관을 권합니다. 문제가 생겼을 때 어느 조건에서 통과했는지 비교할 수 있어 원인 파악이 빨라집니다. 코드 자체는 <a href="../../ko.html">QR StarCode</a>에서 다시 뽑아 원본과 비교할 수 있고, 생성 방법이 궁금하면 <a href="qr-code-generator-guide.html">생성기 사용법</a>을 참고하세요.</p>
+</article>
+<div class="cta">
+<h2>지금 바로 나만의 QR 코드를 만들어 보세요</h2>
+<p>가입도 설치도 추적도 없습니다. 11가지 데이터 유형과 로고 삽입, 고화질 SVG·PNG 다운로드까지 브라우저에서 바로 완성하세요.</p>
+<a class="btn" href="../../ko.html">QR StarCode 열기</a>
+</div>
+<section class="rel">
+<h2>관련 글</h2>
+<a href="how-to-scan-a-qr-code.html">QR 코드 스캔 방법: 아이폰·안드로이드·앱 완벽 정리</a>
+<a href="chromacode-image-blending.html">ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유</a>
+<a href="qr-code-generator-guide.html">무료 QR 코드 생성기 사용법: 만들기부터 PNG·SVG 저장까지</a>
+</section>
+<footer class="foot">
+<a href="../../ko.html">← 홈으로</a>
+<a href="index.html">블로그 아티클로 →</a>
+</footer>
+</div>
+</body>
+</html>

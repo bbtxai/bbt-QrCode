@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR 코드와 바코드 차이: 일차원과 이차원 비교 | QR StarCode</title>
+<meta name="description" content="일차원 바코드와 이차원 QR 코드의 저장 용량, 오류 정정, 스캔 방향, 인식 속도 차이를 비교하고 상황별로 무엇을 선택해야 하는지 정리했습니다. 실무 선택 기준을 알려드립니다.">
+<meta name="keywords" content="QR코드바코드차이,1차원바코드,2차원바코드,바코드종류,EAN13,Code128,QR코드용량,바코드용량,QR코드장점,바코드스캐너,QR코드비교,재고관리바코드,QR코드활용분야,바코드한계,QR코드선택">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://qrcode.aixmb.cn/blog/ko/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qrcode.aixmb.cn/blog/zh/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ru" href="https://qrcode.aixmb.cn/blog/ru/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ja" href="https://qrcode.aixmb.cn/blog/ja/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="ko" href="https://qrcode.aixmb.cn/blog/ko/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="en" href="https://qrcode.aixmb.cn/blog/en/qr-code-vs-barcode.html">
+<link rel="alternate" hreflang="x-default" href="https://qrcode.aixmb.cn/blog/zh/qr-code-vs-barcode.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QR StarCode">
+<meta property="og:title" content="QR 코드와 바코드 차이: 일차원과 이차원 비교 | QR StarCode">
+<meta property="og:description" content="일차원 바코드와 이차원 QR 코드의 저장 용량, 오류 정정, 스캔 방향, 인식 속도 차이를 비교하고 상황별로 무엇을 선택해야 하는지 정리했습니다. 실무 선택 기준을 알려드립니다.">
+<meta property="og:url" content="https://qrcode.aixmb.cn/blog/ko/qr-code-vs-barcode.html">
+<meta property="article:published_time" content="2026-10-15">
+<meta property="article:modified_time" content="2026-10-15">
+<meta property="article:section" content="QR Code Guides">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QR 코드와 바코드 차이: 일차원과 이차원 비교 | QR StarCode">
+<meta name="twitter:description" content="일차원 바코드와 이차원 QR 코드의 저장 용량, 오류 정정, 스캔 방향, 인식 속도 차이를 비교하고 상황별로 무엇을 선택해야 하는지 정리했습니다. 실무 선택 기준을 알려드립니다.">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:image" content="https://qrcode.aixmb.cn/og-image.png">
+<meta name="twitter:image" content="https://qrcode.aixmb.cn/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"QR 코드와 바코드 차이: 일차원과 이차원","description":"일차원 바코드와 이차원 QR 코드의 저장 용량, 오류 정정, 스캔 방향, 인식 속도 차이를 비교하고 상황별로 무엇을 선택해야 하는지 정리했습니다. 실무 선택 기준을 알려드립니다.","inLanguage":"ko","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"publisher":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://qrcode.aixmb.cn/blog/ko/qr-code-vs-barcode.html"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--card:#141a26;--border:#232c3d;--text:#e6e9f0;--muted:#9aa4b8;--accent:#8b5cf6;--accent2:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Hiragino Sans GB','Noto Sans JP','Malgun Gothic',sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:#a78bfa;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:30px}
+.top .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+.top .brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+h1{font-size:1.9rem;line-height:1.3;margin-bottom:10px}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:26px}
+article h2{font-size:1.35rem;margin:34px 0 12px;padding-left:12px;border-left:3px solid var(--accent)}
+article p{margin-bottom:14px}
+article ul{margin:0 0 14px 22px}
+article li{margin-bottom:6px}
+article strong{color:#fff}
+.cta{margin:40px 0;padding:22px 24px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.08));text-align:center}
+.cta h2{font-size:1.2rem;margin-bottom:6px}
+.cta p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.rel h2{font-size:1.15rem;margin:34px 0 12px}
+.rel a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);margin-bottom:10px;color:var(--text)}
+.rel a:hover{border-color:var(--accent);text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}
+.cards{display:grid;gap:16px;margin-top:26px}
+.card{display:block;padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.card h2{font-size:1.15rem;margin-bottom:6px;color:var(--text)}
+.card p{color:var(--muted);font-size:.92rem}
+.card .d{font-size:.78rem;color:var(--muted);margin-top:8px}
+.intro{color:var(--muted);max-width:60ch}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:30px}
+@media(max-width:560px){h1{font-size:1.5rem}}
+</style>
+<script src="../../ads-analytics.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="../../ko.html">QR <span>StarCode</span></a>
+<nav><a href="../../ko.html">← 홈</a><a href="../../blog/en/qr-code-vs-barcode.html">English</a><a href="../../blog/zh/qr-code-vs-barcode.html">中文</a><a href="../../blog/ru/qr-code-vs-barcode.html">Русский</a><a href="../../blog/ja/qr-code-vs-barcode.html">日本語</a><span class="cv" style="color:var(--muted);cursor:default">한국어</span></nav>
+</header>
+<nav class="crumb" aria-label="breadcrumb"><a href="../../ko.html">홈</a> › <a href="index.html">블로그 아티클</a> › QR 코드와 바코드 차이: 일차원과 이차원</nav>
+<h1>QR 코드와 바코드 차이: 일차원과 이차원</h1>
+<p class="meta">2026-10-15 · 약 3분 소요</p>
+<article>
+<p>마트 계산대에서 읽히는 검은 줄무늬와, 메뉴판에 붙은 네모난 사각형은 겉모습부터 다릅니다. 두 가지 모두 정보를 담아 스캔하는 도구지만, 저장할 수 있는 양과 활용 방식은 크게 다릅니다. 이 글에서는 <strong>바코드(일차원)</strong>와 <strong>QR 코드(이차원)</strong>의 차이를 항목별로 비교하고, 어떤 상황에서 무엇을 선택해야 하는지 정리했습니다.</p>
+<h2>일차원과 이차원의 구조 차이</h2>
+<p>바코드는 가로 방향의 검은 막대와 흰 여백만으로 정보를 표현하는 <strong>일차원(1D)</strong> 방식입니다. 막대의 굵기와 간격이 곧 숫자가 됩니다. 반면 QR 코드는 가로와 세로 양방향으로 흑백 칸을 배치하는 <strong>이차원(2D)</strong> 방식이라, 같은 면적에 훨씬 많은 정보를 담을 수 있습니다.</p>
+<h2>저장 용량과 표현 범위</h2>
+<ul>
+<li><strong>바코드</strong>: 보통 8~13자리 숫자를 담습니다. 상품 코드처럼 짧은 식별자에 적합합니다.</li>
+<li><strong>QR 코드</strong>: 숫자는 7천 자 이상, 문자는 1천 자 이상 저장 가능하며 한글도 표현할 수 있습니다.</li>
+<li><strong>표현 대상</strong>: 바코드는 숫자 위주지만, QR 코드는 주소·텍스트·연락처·결제 정보까지 담을 수 있습니다.</li>
+</ul>
+<h2>오류 정정과 손상 대응</h2>
+<p>바코드는 한 줄만 손상되거나 인쇄가 번지면 전체 판독이 실패하기 쉽습니다. QR 코드는 리드-솔로몬 방식의 <strong>오류 정정</strong> 기능을 내장해 일부가 가려지거나 더러워져도 내용을 복원합니다. 정정 수준에 따라 7%에서 30%까지 손상을 견디며, 이 덕분에 가운데에 로고를 넣은 디자인 코드도 읽힙니다.</p>
+<h2>스캔 방향과 인식 속도</h2>
+<ul>
+<li><strong>방향</strong>: 바코드는 가로로만 훑어야 하므로 스캐너 정렬이 필요합니다. QR 코드는 세 모서리의 파인더 패턴 덕분에 어느 각도에서든 방향을 스스로 감지합니다.</li>
+<li><b>속도</b>: QR 코드는 360도 어느 방향에서나 빠르게 읽히는 것이 장점이며, "빠른 응답(Quick Response)"이라는 이름도 여기서 나왔습니다.</li>
+<li><strong>인식 범위</strong>: 바코드는 정밀한 위치 정렬을 요구하지만, QR 코드는 휴대폰 카메라 하나로 읽을 수 있습니다.</li>
+</ul>
+<h2>각각 어디에 쓰는가</h2>
+<p>바코드는 상품 유통과 재고 관리처럼 <strong>동일한 코드를 대량으로 찍어 빠르게 식별</strong>해야 하는 영역에 강합니다. 계산대, 물류 라벨, 도서 관리가 대표적입니다. QR 코드는 반대로 <strong>사용자와 상호작용</strong>하는 영역, 즉 웹사이트 연결, 결제, 전자 명함, 메뉴판 같은 곳에서 힘을 발휘합니다. 물류처럼 기존 스캐너 인프라가 깔린 현장은 바코드를, 고객 접점은 QR 코드를 쓰는 식으로 병행하는 경우도 많습니다.</p>
+<h2>무엇을 선택할까</h2>
+<p>기준은 <strong>담을 정보의 양과 스캔 환경</strong>입니다. 짧은 숫자만 필요하고 전용 스캐너가 있다면 바코드로 충분하고, 링크나 텍스트를 휴대폰으로 읽게 하려면 QR 코드가 답입니다. 유형별 활용 예는 <a href="qr-code-content-types.html">QR 코드에 담을 수 있는 것</a>에서 확인할 수 있고, 코드 생성은 <a href="../../ko.html">QR StarCode</a>에서 바로 할 수 있습니다. 인쇄 후 <a href="qr-code-testing-checklist.html">배포 전 테스트</a>까지 마치면 실무에서 실수를 크게 줄일 수 있습니다.</p>
+</article>
+<div class="cta">
+<h2>지금 바로 나만의 QR 코드를 만들어 보세요</h2>
+<p>가입도 설치도 추적도 없습니다. 11가지 데이터 유형과 로고 삽입, 고화질 SVG·PNG 다운로드까지 브라우저에서 바로 완성하세요.</p>
+<a class="btn" href="../../ko.html">QR StarCode 열기</a>
+</div>
+<section class="rel">
+<h2>관련 글</h2>
+<a href="qr-code-content-types.html">QR 코드에 담을 수 있는 것: 텍스트·WiFi·명함 11가지 유형</a>
+<a href="chromacode-image-blending.html">ChromaCode 이미지 QR 코드: 가운데 사진도 스캔되는 이유</a>
+<a href="how-to-scan-a-qr-code.html">QR 코드 스캔 방법: 아이폰·안드로이드·앱 완벽 정리</a>
+</section>
+<footer class="foot">
+<a href="../../ko.html">← 홈으로</a>
+<a href="index.html">블로그 아티클로 →</a>
+</footer>
+</div>
+</body>
+</html>

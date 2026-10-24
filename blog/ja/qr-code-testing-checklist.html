@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目 | QR StarCode</title>
+<meta name="description" content="QRコードを配布・印刷する前に確認したいテスト項目をチェックリスト形式で解説します。多機種や複数アプリ、距離と角度、光の当たり方、印刷見本の実測と予備リンクまでを網羅しました。公開後のトラブルを防ぐために、配布前の確認にご活用ください。">
+<meta name="keywords" content="QRコード テスト,QRコード 確認事項,QRコード 印刷 確認,QRコード 読めるか テスト,QRコード 機種 違い,QRコード アプリ 違い,QRコード 距離,QRコード 角度,QRコード 照明,QRコード 校正,QRコード 公開前,QRコード チェックリスト,QRコード 予備 URL,QRコード 運用,QRコード 品質">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://qrcode.aixmb.cn/blog/ja/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qrcode.aixmb.cn/blog/zh/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ru" href="https://qrcode.aixmb.cn/blog/ru/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ja" href="https://qrcode.aixmb.cn/blog/ja/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="ko" href="https://qrcode.aixmb.cn/blog/ko/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="en" href="https://qrcode.aixmb.cn/blog/en/qr-code-testing-checklist.html">
+<link rel="alternate" hreflang="x-default" href="https://qrcode.aixmb.cn/blog/zh/qr-code-testing-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QR StarCode">
+<meta property="og:title" content="QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目 | QR StarCode">
+<meta property="og:description" content="QRコードを配布・印刷する前に確認したいテスト項目をチェックリスト形式で解説します。多機種や複数アプリ、距離と角度、光の当たり方、印刷見本の実測と予備リンクまでを網羅しました。公開後のトラブルを防ぐために、配布前の確認にご活用ください。">
+<meta property="og:url" content="https://qrcode.aixmb.cn/blog/ja/qr-code-testing-checklist.html">
+<meta property="article:published_time" content="2026-10-15">
+<meta property="article:modified_time" content="2026-10-15">
+<meta property="article:section" content="QR Code Guides">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目 | QR StarCode">
+<meta name="twitter:description" content="QRコードを配布・印刷する前に確認したいテスト項目をチェックリスト形式で解説します。多機種や複数アプリ、距離と角度、光の当たり方、印刷見本の実測と予備リンクまでを網羅しました。公開後のトラブルを防ぐために、配布前の確認にご活用ください。">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:image" content="https://qrcode.aixmb.cn/og-image.png">
+<meta name="twitter:image" content="https://qrcode.aixmb.cn/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目","description":"QRコードを配布・印刷する前に確認したいテスト項目をチェックリスト形式で解説します。多機種や複数アプリ、距離と角度、光の当たり方、印刷見本の実測と予備リンクまでを網羅しました。公開後のトラブルを防ぐために、配布前の確認にご活用ください。","inLanguage":"ja","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"publisher":{"@type":"Organization","name":"QR StarCode","url":"https://qrcode.aixmb.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://qrcode.aixmb.cn/blog/ja/qr-code-testing-checklist.html"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0e14;--card:#141a26;--border:#232c3d;--text:#e6e9f0;--muted:#9aa4b8;--accent:#8b5cf6;--accent2:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Hiragino Sans GB','Noto Sans JP','Malgun Gothic',sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:#a78bfa;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:30px}
+.top .brand{font-weight:700;font-size:1.05rem;color:var(--text)}
+.top .brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+h1{font-size:1.9rem;line-height:1.3;margin-bottom:10px}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:26px}
+article h2{font-size:1.35rem;margin:34px 0 12px;padding-left:12px;border-left:3px solid var(--accent)}
+article p{margin-bottom:14px}
+article ul{margin:0 0 14px 22px}
+article li{margin-bottom:6px}
+article strong{color:#fff}
+.cta{margin:40px 0;padding:22px 24px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.08));text-align:center}
+.cta h2{font-size:1.2rem;margin-bottom:6px}
+.cta p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.rel h2{font-size:1.15rem;margin:34px 0 12px}
+.rel a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);margin-bottom:10px;color:var(--text)}
+.rel a:hover{border-color:var(--accent);text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}
+.cards{display:grid;gap:16px;margin-top:26px}
+.card{display:block;padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card);color:var(--text)}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.card h2{font-size:1.15rem;margin-bottom:6px;color:var(--text)}
+.card p{color:var(--muted);font-size:.92rem}
+.card .d{font-size:.78rem;color:var(--muted);margin-top:8px}
+.intro{color:var(--muted);max-width:60ch}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:30px}
+@media(max-width:560px){h1{font-size:1.5rem}}
+</style>
+<script src="../../ads-analytics.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="../../ja.html">QR <span>StarCode</span></a>
+<nav><a href="../../ja.html">← ホーム</a><a href="../../blog/en/qr-code-testing-checklist.html">English</a><a href="../../blog/zh/qr-code-testing-checklist.html">中文</a><a href="../../blog/ru/qr-code-testing-checklist.html">Русский</a><span class="cv" style="color:var(--muted);cursor:default">日本語</span><a href="../../blog/ko/qr-code-testing-checklist.html">한국어</a></nav>
+</header>
+<nav class="crumb" aria-label="breadcrumb"><a href="../../ja.html">ホーム</a> › <a href="index.html">ブログ記事</a> › QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目</nav>
+<h1>QRコード公開前のテストチェックリスト｜機種・アプリ・印刷で確認すべき項目</h1>
+<p class="meta">2026-10-15 · 約4分で読めます</p>
+<article>
+<p>QRコードは作っただけでは安心できません。自分の端末で読めても、別の機種やアプリでは読めないことがあります。印刷してしまうと、刷り直しには費用も時間もかかります。<strong>公開前に一通りテストしておく</strong>ことで、そうした手戻りを防げます。この記事では、配布や印刷の前に確認したい項目をチェックリストの形でまとめました。</p>
+<h2>機種とアプリを分けて確認する</h2>
+<p>まずは、できるだけ多くの端末とアプリで読み取ってみましょう。</p>
+<ul><li>iPhoneとAndroidの両方で試す</li>
+<li>標準カメラ、微信、支付宝、ブラウザなど複数の入口から読む</li>
+<li>古い機種や画面の小さい端末でも確認する</li></ul>
+<p>アプリによって認識の厳しさが違うため、一つのアプリで読めたからといって油断はできません。</p>
+<p>テストでは、標準カメラと専用のスキャナアプリの両方を試し、認識までの速さも比べてみましょう。同じコードでも、アプリによって合焦の速さや余白の扱いが異なるためです。</p>
+<h2>距離・角度・明るさを変えて試す</h2>
+<p>実際の利用場面では、正面からきれいに撮影できるとは限りません。</p>
+<ul><li><strong>距離</strong>：10センチから1メートルほどまで、離しても寄っても読めるか</li>
+<li><strong>角度</strong>：斜め45度からでも認識するか</li>
+<li><strong>明るさ</strong>：屋内の暗い場所や、逆光、スマートフォンの画面表示でも読めるか</li></ul>
+<p>特にポスターや看板に使う場合は、離れた位置からの読み取りを必ず試してください。</p>
+<p>手を伸ばしてかざす想定なら20〜30センチ、看板なら1〜2メートルと、実際の利用距離に合わせて確認します。カメラを傾けた状態でも読めるか、コードの端が切れていないかも見ておきましょう。</p>
+<h2>印刷見本で実測する</h2>
+<p>画面での確認が終わったら、必ず<strong>実際に印刷して</strong>読み取ります。</p>
+<ul><li>想定している用紙と同じ素材・光沢で印刷する</li>
+<li>実物のサイズで、余白が十分に取れているか確認する</li>
+<li>ラミネートや保護シールを貼った状態でも読めるか試す</li></ul>
+<p>光沢紙は照明を反射しやすく、画面では問題なくても印刷物では読みにくいことがあります。</p>
+<p>印刷後は、屋外や窓際など光の強い場所でも試します。ラベルシールに印刷する場合は、曲面に貼ると歪んで読めなくなることがあるため、平らな面を選びましょう。</p>
+<h2>予備のリンクと運用後の点検</h2>
+<p>公開したあとのことも考えておきましょう。飛び先のページが移動・削除されると、コードは無意味になります。</p>
+<ul><li>中継用のリダイレクトページを用意し、飛び先を後から変えられるようにする</li>
+<li>アクセス解析を入れ、読み取りが記録されているか確認する</li>
+<li>公開後も定期的に読み取り、汚れや貼り替えがないか点検する</li></ul>
+<p>短縮URLを使うと見た目はすっきりしますが、リンク切れのリスクも伴います。中継ページには飛び先の変更履歴を残しておくと、後から経緯を確認できて便利です。</p>
+<p>読み取れないときの原因と対処は<a href="how-to-scan-a-qr-code.html">QRコードの読み取り方の記事</a>で解説しています。イベントで使う場合は、<a href="qr-code-for-events-tickets.html">チケットのQRコード</a>の注意点もあわせて確認しておくと安心です。</p>
+</article>
+<div class="cta">
+<h2>無料でQRコードを作成</h2>
+<p>登録不要・透かしなし。11種類のQRコードを今すぐブラウザで作成できます。</p>
+<a class="btn" href="../../ja.html">QR StarCode を開く</a>
+</div>
+<section class="rel">
+<h2>関連記事</h2>
+<a href="how-to-scan-a-qr-code.html">QRコードの読み取り方｜iPhone・Android・アプリ別の手順と読めない時の対処</a>
+<a href="qr-code-for-events-tickets.html">イベント受付・チケットのQRコード｜発行と本人確認、重複入場の防ぎ方</a>
+<a href="qr-code-generator-guide.html">無料QRコード生成ツールの使い方｜作成手順とPNG・SVG保存のコツ</a>
+</section>
+<footer class="foot">
+<a href="../../ja.html">← ホームに戻る</a>
+<a href="index.html">ブログ記事に戻る →</a>
+</footer>
+</div>
+</body>
+</html>
