@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/QR-StarCode-06b6d4?style=for-the-badge&logo=qrcode&logoColor=white" alt="QR StarCode" />
+  <img src="https://img.shields.io/badge/QR-StarCode-06b6d4?style=for-the-badge&logo=qrcode&logoColor=white" alt="bbt-QrCode" />
   <br/>
   <strong>The free, open-source QR code generator that doesn't suck.</strong>
   <br/>
@@ -20,11 +20,11 @@
 
 ---
 
-## What is QR StarCode?
+## What is bbt-QrCode?
 
-QR StarCode is a professional-grade QR code generator that runs entirely in your browser. It supports **11 data types** (including 🇲🇾 DuitNow), **ChromaCode image-blended mosaic codes**, a full **QR scanner with DuitNow EMV breakdown**, **live preview**, and exports to **PNG & SVG** — all from a single HTML file with zero backend.
+bbt-QrCode is a professional-grade QR code generator that runs entirely in your browser. It supports **11 data types** (including 🇲🇾 DuitNow), **ChromaCode image-blended mosaic codes**, a full **QR scanner with DuitNow EMV breakdown**, **live preview**, and exports to **PNG & SVG** — all from a single HTML file with zero backend.
 
-Most QR generators are bloated SaaS tools that paywall basic features, plaster watermarks on your codes, or require accounts just to download a PNG. QR StarCode does none of that.
+Most QR generators are bloated SaaS tools that paywall basic features, plaster watermarks on your codes, or require accounts just to download a PNG. bbt-QrCode does none of that.
 
 ---
 
@@ -117,7 +117,7 @@ qr-studio/
 2. Go to **Settings → Pages**
 3. Under **Source**, select `main` branch and `/ (root)` folder
 4. Click **Save**
-5. Your QR StarCode is live at `https://<your-username>.github.io/qr-studio`
+5. Your bbt-QrCode is live at `https://<your-username>.github.io/qr-studio`
 
 ---
 

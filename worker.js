@@ -1,4 +1,4 @@
-// Cloudflare Worker: CORS image proxy for QR StarCode ChromaCode
+// Cloudflare Worker: CORS image proxy for bbt-QrCode ChromaCode
 // Deploy at: https://workers.cloudflare.com
 // Free tier: 100,000 requests/day
 //
